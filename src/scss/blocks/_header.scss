@@ -1,0 +1,160 @@
+@import '../bases/mixins';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__burger {
+        width: 42px;
+        display: flex;
+        flex-flow: column;
+        align-content: flex-start;
+        gap: 10px;
+        cursor: pointer;
+
+        div {
+            width: 42px;
+            height: 3px;
+            background: #2C2C2C;
+            border-radius: 7px;
+            transition: all 300ms ease-in-out;
+
+            &:nth-child(2) {
+                width: 28px;
+            }
+        }
+
+        &:hover {
+            div {
+                width: 28px;
+
+                &:nth-child(2) {
+                    width: 42px;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        display: flex;
+        flex-flow: column;
+        align-content: flex-start;
+
+        span {
+            display: block;
+        }
+    }
+
+    &__address {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    &__messangers {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        .text {
+            font-style: italic;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .msg-icons {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+    }
+
+    &__btn-and-phone {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__btn {
+        @include btnCallback;
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+    &__phones {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-end;
+
+        .phone {
+            display: block;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+        }
+        .work-time {
+            text-align: right;
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .header {
+        &__btn-and-phone {
+            flex-flow: column-reverse;
+            align-items: flex-end;
+        }
+    }
+}
+
+@media (max-width: 744px) {
+    .header {
+        .header__messangers.headering {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        &__address.headering {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .header {
+        display: grid; 
+        grid-template-columns: 35% 65%; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "burger phone"
+          "logo phone"; 
+      
+        &__logo {
+            grid-area: logo;
+            font-size: 15px !important;
+        }
+        &__burger {
+            grid-area: burger;
+        }
+        &__btn-and-phone {
+            grid-area: phone;
+            .phone {
+                font-size: 19px;
+            }
+            .work-time {
+                font-size: 14px;
+            }
+            .header__btn {
+                font-size: 14px;
+            }
+        }
+    }
+}

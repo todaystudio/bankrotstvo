@@ -1,0 +1,146 @@
+.bankrot {
+    position: relative;
+    overflow: hidden;
+    &__money {
+        position: absolute;
+        transform: scale(.7);
+        top: -38px;
+        right: 150px;
+    }
+    &__tabs-wrap {
+        width: 100%;
+    }
+
+    &__tabs {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        margin-bottom: 58px;
+
+    }
+
+    &__tabs-item {
+        height: 61px;
+        background: #FFFFFF;
+        border: 1px solid #FDE388;
+        box-shadow: 0px 0px 17px rgba(255, 189, 18, 0.1);
+        border-radius: 11px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        color: #000000;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        transition: all 200ms ease-in;
+    }
+
+    &__tabs-item.active {
+        background: #FFD362;
+        border: 1px solid #FDE388;
+        box-shadow: 0px 0px 17px rgba(255, 189, 18, 0.4);
+        color: #FFFFFF;
+    }
+
+    &__content-wrap {
+        display: flex;
+        align-items: center;
+        gap: 90px;
+    }
+
+    &__content {
+        flex: 1 1;
+        display: none;
+        flex-flow: column;
+        gap: 23px;
+
+        .title {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 143.9%;
+            color: #3D3D3D;
+        }
+
+        .text {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 142.9%;
+        }
+
+        .text_primary {
+            background: #FFEEC2;
+            border: 2px solid #FFBD12;
+            border-radius: 21px;
+            padding: 23px 30px;
+        }
+    }
+    &__content.active {
+        display: flex;
+    }
+
+    &__form {
+        max-width: 445px;
+        background: #FFFBED;
+        border-radius: 20px;
+        padding: 50px 35px;
+        box-sizing: border-box;
+
+        .title-form {
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 30px;
+            margin-bottom: 27px;
+            width: 70%;
+        }
+
+        .soglasie {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 142.9%;
+            text-align: center;
+            color: #9D9D9D;
+            width: 80%;
+            margin: 0 auto;
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .bankrot {
+        &__content-wrap {
+            flex-flow: column;
+            align-items: center;
+        }
+        &__tabs {
+            overflow: scroll;
+        }
+
+        &__tabs-item {
+            padding: 0 20px;
+            min-width: 240px;
+        }
+        &__money {
+            top: -2px;
+            right: -41px;
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    .bankrot {
+        .more {
+            display: block;
+        }
+    }
+}
+

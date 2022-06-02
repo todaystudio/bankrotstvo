@@ -1,0 +1,79 @@
+@mixin btnCallback {
+    background: linear-gradient(180deg, #FFBE17 0%, #FDE388 100%);
+    border-width: 0px 1px 2px 1px;
+    border-style: solid;
+    border-color: #ECECEC;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.11);
+    border-radius: 9px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 150ms ease-in;
+    &:hover {
+        background: linear-gradient(180deg, #ffbd15 0%, #ffdb58 100%);
+        box-shadow: 0px 2px 6px rgba(255, 204, 0, 0.763);
+    }
+}
+
+@mixin offerBtn {
+    background: linear-gradient(106.73deg, #EFE4BB 9.97%, #F2D671 30.24%, #FFBE17 54.26%, #FFB800 82.04%);
+    border-width: 0px 1px 2px 1px;
+    border-style: solid;
+    border-color: #ECECEC;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    transition: all 150ms ease-in;
+    &:hover {
+        background: linear-gradient(106.73deg, #EFE4BB 9.97%, #F2D671 30.24%, #FFBE17 54.26%, #FFB800 82.04%);
+        box-shadow: 0px 4px 8px rgba(255, 204, 0, 0.763);
+    }
+}
+
+@mixin cardWithBotBorder {
+    background: #FFFFFF;
+    border-bottom: 4px solid #FFC937;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+}
+
+@mixin tab {
+    background: #FFFFFF;
+    border: 1px solid #FDE388;
+    box-shadow: 0px 0px 17px rgba(255, 189, 18, 0.1);
+    border-radius: 11px;
+}
+
+@mixin tabActive {
+    background: #FFD362;
+    border: 1px solid #FDE388;
+    box-shadow: 0px 0px 17px rgba(255, 189, 18, 0.4);
+    border-radius: 11px;
+}
+
+@mixin input {
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    border-radius: 17px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #747474;
+}
+
+@mixin formBtn {
+    background: linear-gradient(106.73deg, #FFEEC2 9.97%, #FFD74A 30.24%, #FFBE17 54.26%, #FFB800 82.04%);
+    border-radius: 17px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 150ms ease-in;
+    &:hover {
+        background: linear-gradient(106.73deg, #FFEEC2 9.97%, #fad037 30.24%, #ffb806 54.26%, #FFB800 82.04%);
+        box-shadow: 0px 4px 8px rgba(255, 204, 0, 0.763);
+
+    }
+}

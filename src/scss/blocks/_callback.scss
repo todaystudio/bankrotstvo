@@ -1,0 +1,121 @@
+.callback-sec {
+    margin-top: 82px;
+    width: 100%;
+    min-height: 270px;
+    background-color: #FFFBED;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .container {
+        width: 1110px;
+        max-width: 90vw;
+    }
+
+    &::before {
+        content: '';
+        width: 318px;
+        height: 331px;
+        position: absolute;
+        left: -99px;
+        top: -33px;
+        background-image: url('../img/gerb.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    .callback-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    .callback-text {
+        max-width: 415px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 43px;
+        color: #000000;
+
+        span {
+            font-weight: 500;
+        }
+    }
+
+    .callback-form {
+        width: 392px;
+    }
+
+    .callback-img {
+        width: 230px;
+        position: absolute;
+        right: 60px;
+        bottom: 0;
+    }
+
+}
+
+@media (max-width: 1160px) {
+    .callback-sec {
+        padding: 30px 0;
+        &::before {
+            width: 430px;
+            top: -40px;
+            right: -70px;
+            left: auto;
+        }
+        .callback-wrap {
+            flex-flow: column;
+            align-items: flex-start;
+            gap: 50px;
+        }
+        .callback-img {
+            width: 320px;
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .callback-sec {
+        .callback-img {
+            width: 270px;
+            right: -30px;
+
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .callback-sec {
+        .callback-img {
+            width: 220px;
+            right: -70px;
+
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .callback-sec {
+        .callback-wrap {
+            align-items: center;
+            .callback-text {
+                text-align: center;
+            }
+            .callback-form {
+                width: 90vw;
+                margin: 0 auto;
+                box-sizing: border-box;
+            }
+        }
+        .callback-img {
+           display: none;
+        }
+    }
+}

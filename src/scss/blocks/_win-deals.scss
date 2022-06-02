@@ -1,0 +1,119 @@
+
+.win-deals {
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+        overflow-x: scroll;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    &__card {
+        @include cardWithBotBorder;
+        min-width: 350px;
+        padding: 50px 30px 30px 30px;
+        box-sizing: border-box;
+        background: url('../img/deal_bg.png');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        
+        .docs {
+            position: absolute;
+            bottom: 54px;
+            right: 45px;
+        }
+
+        .number {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            color: #5A5A5A;
+        }
+
+        .status {
+            width: min-content;
+            padding: 3px 17px;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background: #57D163;
+            border-radius: 8px;
+            color: #FFFFFF;
+            margin-bottom: 23px;
+        }
+
+        .time>.label,
+        .duty>.label {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+        }
+
+        .time {
+            margin-bottom: 17px;
+            .value {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 17px;
+                display: flex;
+                align-items: center;
+                color: #000000;
+            }
+        }
+
+        .duty {
+            margin-bottom: 17px;
+            .value {
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 29px;
+                display: flex;
+                align-items: center;
+                color: #000000;
+            }
+        }
+
+        .link {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            color: #929292;
+            transition: all 200ms ease-in;
+            &:hover {
+                span {
+                    color: #ffc937;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 495px) {
+    .win-deals {
+        .more {
+            display: block;
+        }
+        &__card {
+            min-width: 265px;
+            .docs {
+                display: none;
+            }
+        }
+    }
+}

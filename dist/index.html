@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#dbb73d">
+    <meta name="msapplication-TileColor" content="#FFC937">
+    <meta name="theme-color" content="#FFC937">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Банкротство физических лиц в Белореченске</title>
+</head>
+
+<body>
+
+    <div class="overlay" id="overlayForDrawer">
+        <div class="drawer">
+            <div class="drawer__cross"></div>
+            <div class="drawer__wrap">
+                <!-- <img class="drawer__logo" src="./img/logo.png" alt="logo"> -->
+                <ul class="drawer__ul">
+                    <li><a href="#">Какие долги можно списать?</a></li>
+                    <li><a href="#">Списание долгов “Под ключ”</a></li>
+                    <li><a href="#">Банкротство физических лиц</a></li>
+                    <li><a href="#">Выигранные дела</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="drawer__phone">
+                    <a href="tel:+79261770546">8 926 177-05-46</a>
+                    <span>eжедневно с 9:00 до 19:00</span>
+                </div>
+                <button class="header__btn open-modal" id="openModalInDrawer">Заказать звонок</button>
+                <div class="header__address fz-18">
+                    <img src="./img/point.svg" alt="map_point">
+                    <div class="text">
+                        г. Белореченск,
+                        <span class="fw-700 d-block">ул. Дундича 1</span>
+                    </div>
+                </div>
+                <div class="header__messangers">
+                    <div class="text">напишите,<br>если вопрос срочный</div>
+                    <div class="msg-icons">
+                        <a href="#" class="msg-link">
+                            <div class="msg-icon telegram-icon"></div>
+                        </a>
+                        <a href="#" class="msg-link">
+                            <div class="msg-icon whatsapp-icon"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlayForModal">
+
+        <div class="modal">
+            <div class="modal__cross"></div>
+            <div class="modal__text-title">
+                Заполните форму
+                и мы Вам перезвоним
+            </div>
+            <div class="callback-form">
+                <form action="#" class="form callback-form">
+                    <input placeholder="Имя" type="text" name="name" id="name_form">
+                    <input placeholder="Телефон" type="tel" class="tel" name="phone" id="phone_form">
+                    <button type="submit" id="btn_form" class="form__btn">Получить бесплатную консультацию</button>
+                    <div class="politica">
+                        Нажимая кнопку отправить Вы соглашаетесь с <a href="#" target="_blank"
+                            rel="noopener noreferer">правилами обработки данных</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="firstblock">
+        <img src="./img/main_offer_img.png" alt="boginya" class="firstblock__main-img">
+        <div class="firstblock__money-right">
+            <img src="./img/money_1.png" alt="money">
+        </div>
+        <img src="./img/money_2.png" alt="money" class="firstblock__money-left">
+        <div class="container">
+            <header class="header">
+                <div class="header__burger" id="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="header__logo fz-18">
+                    Адвокат
+                    <span class="fw-700 d-block">Оганян О. А.</span>
+                </div>
+                <div class="header__address fz-18 headering">
+                    <img src="./img/point.svg" alt="map_point">
+                    <div class="text">
+                        г. Белореченск,
+                        <span class="fw-700 d-block">ул. Дундича 1</span>
+                    </div>
+                </div>
+                <div class="header__messangers headering">
+                    <div class="text">напишите,<br>если вопрос срочный</div>
+                    <div class="msg-icons">
+                        <a href="#" class="msg-link">
+                            <div class="msg-icon telegram-icon"></div>
+                        </a>
+                        <a href="#" class="msg-link">
+                            <div class="msg-icon whatsapp-icon"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__btn-and-phone">
+                    <button class="header__btn open-modal">Заказать звонок</button>
+                    <div class="header__phones">
+                        <a href="tel:+79881493738" class="phone">+7 988 149 37 38</a>
+                        <div class="work-time">ежедневно с 9:00 до 18:00</div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="offer">
+            <div class="container">
+                <h1 class="offer__title">
+                    Банкротство физических лиц в Белореченске
+                    <span>
+                        и&nbsp;Краснодарском крае
+                    </span>
+                </h1>
+                <div class="offer__sub-title">
+                    Ваша возможность попрощаться с долгами
+                    <span>законно</span>
+                </div>
+                <div class="offer__advantages">
+                    <ul>
+                        <li>
+                            <div>Поможем
+                                <span>сохранить</span> Ваше имущество</div>
+                        </li>
+                        <li>
+                            <div>Опыт<br> более<span> 10 лет</span></div>
+                        </li>
+                        <li>
+                            <div>Более 230<br> <span> выиграных</span> дел</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offer__buttons-group">
+                    <button class="offer__btn-primary open-modal">
+                        Рассчитать стоимость списания долгов
+                    </button>
+                    <a class="offer__btn-secondary">
+                        посмотреть<br>выигранные дела
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="duty">
+        <div class="container">
+            <div class="section-title-wrap">
+                <h2 class="section-title">
+                    Какие долги можно <span>списать?</span>
+                </h2>
+                <div class="section-subtitle">
+                    Можно списате те долги, которые предусмотрены Федеральным законом<br> от 26.10.2002 N 127-Ф3 (ред.
+                    от 24.04.2020) «О несостоятельности (банкротстве)»
+                </div>
+            </div>
+            <div class="duty__cards-wrap">
+                <div class="duty__card">
+                    <div class="duty__card-img">
+                        <img src="./img/block_1_machine.png" alt="stiralka">
+                    </div>
+                    <div class="duty__card-text">
+                        Потребительские кредиты
+                    </div>
+                </div>
+                <div class="duty__card">
+                    <div class="duty__card-img">
+                        <img src="./img/block_1_calculate.png" alt="stiralka">
+                    </div>
+                    <div class="duty__card-text">
+                        Пени и штрафы по кредитам и займам
+                    </div>
+                </div>
+                <div class="duty__card">
+                    <div class="duty__card-img">
+                        <img src="./img/block_1_card_and_money.png" alt="stiralka">
+                    </div>
+                    <div class="duty__card-text">
+                        Долги по кредитным картам
+                    </div>
+                </div>
+                <div class="duty__card">
+                    <div class="duty__card-img">
+                        <img src="./img/block_1_house.png" alt="stiralka">
+                    </div>
+                    <div class="duty__card-text">
+                        Долги за услуги ЖКХ
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="callback-sec">
+        <div class="container">
+            <div class="callback-wrap">
+                <div class="callback-text">
+                    Подробно расскажем о процедуре банкротства и дадим <span>экспертную оценку Вашего дела</span>
+                </div>
+                <div class="callback-form">
+                    <form action="#" class="form callback-form">
+                        <input placeholder="Имя" type="text" name="name" id="name_form">
+                        <input placeholder="Телефон" class="tel" type="tel" name="phone" id="phone_form">
+                        <button type="submit" id="btn_form" class="form__btn">Получить бесплатную консультацию</button>
+                        <div class="politica">
+                            Нажимая кнопку отправить Вы соглашаетесь с <a href="#" target="_blank"
+                                rel="noopener noreferer">правилами обработки данных</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <img src="./img/hand_wuth_phone.png" alt="han_and_phone" class="callback-img">
+    </section>
+
+    <section class="turnkey">
+        <div class="container">
+            <div class="section-title-wrap">
+                <h2 class="section-title">
+                    Сделаем всё за Вас – <span>“под ключ”</span>
+                </h2>
+            </div>
+            <div class="turnkey__wrap">
+                <div class="turnkey__item">
+                    <div class="icon"><img src="./img/advantages_3.svg" alt=""></div>
+                    <div class="title">Доступность</div>
+                    <div class="text">Бесплатно проконсультируем, проведем детальный анализ ситуации, предложим до 3-х
+                        вариантов решения</div>
+                </div>
+
+                <div class="turnkey__item">
+                    <div class="icon"><img src="./img/advantages_2.svg" alt=""></div>
+                    <div class="title">Забота</div>
+                    <div class="text">Бесплатно проконсультируем, проведем детальный анализ ситуации, предложим до 3-х
+                        вариантов решения</div>
+                </div>
+
+                <div class="turnkey__item">
+                    <div class="icon"><img src="./img/advantages_1.svg" alt=""></div>
+                    <div class="title">Защита</div>
+                    <div class="text">Бесплатно проконсультируем, проведем детальный анализ ситуации, предложим до 3-х
+                        вариантов решения</div>
+                </div>
+
+                <div class="turnkey__item">
+                    <div class="icon"><img src="./img/advantages_5.svg" alt=""></div>
+                    <div class="title">Гарантия</div>
+                    <div class="text">Бесплатно проконсультируем, проведем детальный анализ ситуации, предложим до 3-х
+                        вариантов решения</div>
+                </div>
+
+                <div class="turnkey__item">
+                    <div class="icon"><img src="./img/advantages_4.svg" alt=""></div>
+                    <div class="title">Свобода</div>
+                    <div class="text">Бесплатно проконсультируем, проведем детальный анализ ситуации, предложим до 3-х
+                        вариантов решения</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="write-off">
+        <img src="./img/statue.png" alt="statue" class="write-off__bg-img">
+        <div class="container">
+            <div class="section-title-wrap">
+                <h2 class="section-title">
+                    Процесс списания <span>долгов</span>
+                </h2>
+            </div>
+
+            <div class="write-off__wrap">
+                <div class="write-off__item">
+                    <div class="number">1</div>
+                    <div class="text">Оставьте заявку на сайте или позвоните нам</div>
+                </div>
+                <div class="write-off__item">
+                    <div class="number">2</div>
+                    <div class="text">Бесплатно проанализируем Вашу ситуацию для принятия решения о запуске процедуры
+                        банкротства.</div>
+                </div>
+                <div class="write-off__item">
+                    <div class="number">3</div>
+                    <div class="text">Заключаем договор на удобных для Вас условиях</div>
+                </div>
+                <div class="write-off__item">
+                    <div class="number">4</div>
+                    <div class="text">Готовим документы для подачи в Суд с целью доказательства добросовестности
+                        должника</div>
+                </div>
+                <div class="write-off__item">
+                    <div class="number">5</div>
+                    <div class="text">Подаем в Суд отчет о финансовом состоянии должника</div>
+                </div>
+                <div class="write-off__item">
+                    <div class="number">6</div>
+                    <div class="text">Ведем дело в суде до окончания процедуры банкротства и полного списания ваших
+                        долгов.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="be-free">
+        <img src="./img/gerb.png" alt="gerb" class="be-free__img">
+        <div class="container">
+            <div class="section-title-wrap">
+                <h2 class="section-title">
+                    Продолжайте жить <span>– свободно</span>
+                </h2>
+            </div>
+            <div class="be-free__wrap">
+                <div class="be-free__card">
+                    <div class="text"><span>Кредиторы </span>оставят Вас в покое</div>
+                    <div class="img">
+                        <img src="./img/free_phone.png" alt="phone" class="phone">
+                    </div>
+                </div>
+                <div class="be-free__card">
+                    <div class="text"><span>Продолжайте пользоваться</span> своим имуществом </div>
+                    <div class="img">
+                        <img src="./img/free_car.png" alt="car">
+                    </div>
+                </div>
+                <div class="be-free__card">
+                    <div class="text">Не беспокойтесь о документах – мы всё <span>сделам сами</span></div>
+                    <div class="img">
+                        <img src="./img/free_docs.png" alt="phone">
+                    </div>
+                </div>
+                <div class="be-free__card">
+                    <div class="text"><span>Ваши долги – 0₽</span> Начните жить с чистого листа</div>
+                    <div class="img">
+                        <img src="./img/free_chtapm.png" alt="phone">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bankrot">
+        <img src="./img/money_2.png" class="bankrot__money" alt="money">
+        <div class="section-title-wrap">
+            <h2 class="section-title">
+                <span>Банкротство</span> физического лица
+            </h2>
+        </div>
+        <div class="container">
+            <div class="bankrot__tabs-wrap">
+                <div class="more">Листайте →</div>
+                <div class="bankrot__tabs">
+                    <div class="bankrot__tabs-item active" data-tab="#tab1">
+                        Банкротство при ипотеке
+                    </div>
+                    <div class="bankrot__tabs-item" data-tab="#tab2">
+                        Банкротство, если есть собственность
+                    </div>
+                    <div class="bankrot__tabs-item" data-tab="#tab3">
+                        Банкротство, когда собственности нет
+                    </div>
+                </div>
+                <div class="bankrot__content-wrap">
+                    <div class="bankrot__content active" id="tab1">
+                        <div class="title">
+                            Риск утраты квартиры при банкротстве неплательщика велик 1
+                        </div>
+                        <div class="text">
+                            Исправное погашение задолженности ипотеке и требование списания обязательств с других
+                            кредиторов у вас не получится.. Ипотечное жилье будет продано с молотка, а полученные деньги
+                            пойдут на покрытие "общих" кредитов и пени.
+                        </div>
+                        <div class="text_primary">
+                            Даже если ипотечная квартира - является единственным жильем, запрет на ее реализацию не
+                            распространяется.
+                        </div>
+                        <div class="text">
+                            Таким образом, при проблемах с кредитами для сохранения жилья, в частности приобретенного в
+                            ипотеку, и прочей собственности банкрота лучше всего нанять компетентных специалистов, цель
+                            которых поспособствовать реструктуризации займа или заключению мирового соглашения.
+                        </div>
+                    </div>
+                    <div class="bankrot__content" id="tab2">
+                        <div class="title">
+                            Риск утраты квартиры при банкротстве неплательщика велик 2
+                        </div>
+                        <div class="text">
+                            Исправное погашение задолженности ипотеке и требование списания обязательств с других
+                            кредиторов у вас не получится.. Ипотечное жилье будет продано с молотка, а полученные деньги
+                            пойдут на покрытие "общих" кредитов и пени.
+                        </div>
+                        <div class="text_primary">
+                            Даже если ипотечная квартира - является единственным жильем, запрет на ее реализацию не
+                            распространяется.
+                        </div>
+                        <div class="text">
+                            Таким образом, при проблемах с кредитами для сохранения жилья, в частности приобретенного в
+                            ипотеку, и прочей собственности банкрота лучше всего нанять компетентных специалистов, цель
+                            которых поспособствовать реструктуризации займа или заключению мирового соглашения.
+                        </div>
+                    </div>
+                    <div class="bankrot__content" id="tab3">
+                        <div class="title">
+                            Риск утраты квартиры при банкротстве неплательщика велик 3
+                        </div>
+                        <div class="text">
+                            Исправное погашение задолженности ипотеке и требование списания обязательств с других
+                            кредиторов у вас не получится.. Ипотечное жилье будет продано с молотка, а полученные деньги
+                            пойдут на покрытие "общих" кредитов и пени.
+                        </div>
+                        <div class="text_primary">
+                            Даже если ипотечная квартира - является единственным жильем, запрет на ее реализацию не
+                            распространяется.
+                        </div>
+                        <div class="text">
+                            Таким образом, при проблемах с кредитами для сохранения жилья, в частности приобретенного в
+                            ипотеку, и прочей собственности банкрота лучше всего нанять компетентных специалистов, цель
+                            которых поспособствовать реструктуризации займа или заключению мирового соглашения.
+                        </div>
+                    </div>
+                    <div class="bankrot__form">
+                        <div class="title-form">
+                            Закажите обратный звонок, чтобы обсудить детали со специалистом
+                        </div>
+                        <form action="#" class="form callback-form">
+                            <input placeholder="Имя" type="text" name="name" id="name_form">
+                            <input placeholder="Телефон" type="tel" class="tel" name="phone" id="phone_form">
+                            <button type="submit" id="btn_form" class="form__btn">Получить бесплатную
+                                консультацию</button>
+                            <div class="politica">
+                                Нажимая кнопку отправить Вы соглашаетесь с <a href="#" target="_blank"
+                                    rel="noopener noreferer">правилами обработки данных</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="win-deals">
+        <div class="container">
+            <div class="section-title-wrap">
+                <h2 class="section-title">
+                    Выигранные <span>дела</span>
+                </h2>
+                <div class="section-subtitle">
+                    Можно списате те долги, которые предусмотрены Федеральным законом<br> от 26.10.2002 N 127-Ф3 (ред.
+                    от 24.04.2020) «О несостоятельности (банкротстве)»
+                </div>
+            </div>
+            <div class="more">Листайте →</div>
+
+            <div class="win-deals__wrap">
+                <div class="win-deals__card">
+                    <img src="./img/deal_docs.png" alt="docs" class="docs">
+                    <div class="number">Дело №А45-10344/2021</div>
+                    <div class="status">выиграно</div>
+                    <div class="time">
+                        <div class="label">Потребовалось времени</div>
+                        <div class="value">5 месяцев и 7 дней</div>
+                    </div>
+                    <div class="duty">
+                        <div class="label">Списали долгов:</div>
+                        <div class="value">2 487 477₽</div>
+                    </div>
+                    <a class="link" href="#" target="_blank" rel="noopener noreferrer">Посмотреть определение <span>
+                            →</span></a>
+                </div>
+                <div class="win-deals__card">
+                    <img src="./img/deal_docs.png" alt="docs" class="docs">
+                    <div class="number">Дело №А45-10344/2021</div>
+                    <div class="status">выиграно</div>
+                    <div class="time">
+                        <div class="label">Потребовалось времени</div>
+                        <div class="value">5 месяцев и 7 дней</div>
+                    </div>
+                    <div class="duty">
+                        <div class="label">Списали долгов:</div>
+                        <div class="value">2 487 477₽</div>
+                    </div>
+                    <a class="link" href="#" target="_blank" rel="noopener noreferrer">Посмотреть определение <span>
+                            →</span></a>
+                </div>
+                <div class="win-deals__card">
+                    <img src="./img/deal_docs.png" alt="docs" class="docs">
+                    <div class="number">Дело №А45-10344/2021</div>
+                    <div class="status">выиграно</div>
+                    <div class="time">
+                        <div class="label">Потребовалось времени</div>
+                        <div class="value">5 месяцев и 7 дней</div>
+                    </div>
+                    <div class="duty">
+                        <div class="label">Списали долгов:</div>
+                        <div class="value">2 487 477₽</div>
+                    </div>
+                    <a class="link" href="#" target="_blank" rel="noopener noreferrer">Посмотреть определение <span>
+                            →</span></a>
+                </div>
+                <div class="win-deals__card">
+                    <img src="./img/deal_docs.png" alt="docs" class="docs">
+                    <div class="number">Дело №А45-10344/2021</div>
+                    <div class="status">выиграно</div>
+                    <div class="time">
+                        <div class="label">Потребовалось времени</div>
+                        <div class="value">5 месяцев и 7 дней</div>
+                    </div>
+                    <div class="duty">
+                        <div class="label">Списали долгов:</div>
+                        <div class="value">2 487 477₽</div>
+                    </div>
+                    <a class="link" href="#" target="_blank" rel="noopener noreferrer">Посмотреть определение <span>
+                            →</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="qna container">
+        <div class="section-title-wrap">
+            <h2 class="section-title">
+                Ответы на часто задаваемые<span> вопросы</span>
+            </h2>
+            <div class="section-subtitle">
+                Если Вы не нашли ответ на свой вопрос – звоните нам, мы обязательно поможем
+            </div>
+        </div>
+        <div class="accordion-menu">
+            <ul>
+                <li>
+                    <input type="checkbox" checked>
+                    <i class="arrow"></i>
+                    <div class="question">Как списать долги?</div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, soluta reprehenderit
+                        sapiente voluptas voluptates sed autem reiciendis, itaque voluptatem eos impedit excepturi,
+                        omnis et quas beatae libero modi iusto velit.</p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i class="arrow"></i>
+                    <div class="question">Как списать долги?</div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, soluta reprehenderit
+                        sapiente voluptas voluptates sed autem reiciendis, itaque voluptatem eos impedit excepturi,
+                        omnis et quas beatae libero modi iusto velit.</p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i class="arrow"></i>
+                    <div class="question">Как списать долги?</div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, soluta reprehenderit
+                        sapiente voluptas voluptates sed autem reiciendis, itaque voluptatem eos impedit excepturi,
+                        omnis et quas beatae libero modi iusto velit.</p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i class="arrow"></i>
+                    <div class="question">Как списать долги?</div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, soluta reprehenderit
+                        sapiente voluptas voluptates sed autem reiciendis, itaque voluptatem eos impedit excepturi,
+                        omnis et quas beatae libero modi iusto velit.</p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i class="arrow"></i>
+                    <div class="question">Как списать долги?</div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, soluta reprehenderit
+                        sapiente voluptas voluptates sed autem reiciendis, itaque voluptatem eos impedit excepturi,
+                        omnis et quas beatae libero modi iusto velit.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__title">Если у Вас остались вопросы или сомнения – с чего начать?</div>
+            <div class="contacts__var_1">
+                <div class="title">Вариант 1</div>
+                <div class="text">Можно очень долго изучать формы и советоваться со знакомыми. Можно пытаться собрать
+                    все документы и написать все заявления самому – но тем самым, уменьшить шансы на списание долгов
+                </div>
+            </div>
+            <div class="contacts__var_2">
+                <div class="title">
+                    Вариант 2
+                </div>
+                <div class="text">
+                    Обратиться к специалистам и попытаться жить <span>свободным от долгов.</span>
+                </div>
+            </div>
+            <div class="contacts__phone-group">
+                <div class="text">Свяжитесь с нами<br> по телефону</div>
+                <a href="tel:+79884199905">8 988 419 99 05</a>
+            </div>
+            <div class="contacts__sub-text">
+                Мы выслушаем и вникнем в Ваши обстоятельства и расскажем, что нужно делать – просто и понятно для любого
+                человека.
+            </div>
+            <div class="contacts__messangers">
+                <div class="up-text">Также, можете написать нам в мессенджеры</div>
+                <div class="msg-icons">
+                    <a href="#" class="msg-link">
+                        <div class="msg-icon telegram-icon"></div>
+                    </a>
+                    <a href="#" class="msg-link">
+                        <div class="msg-icon whatsapp-icon"></div>
+                    </a>
+                </div>
+                <div class="bot-text">или оставить заявку
+                    <a href="#" rel="noreferer">на обратный звонок</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="map__work-time">
+            Мы работаем с 9:00 до 18:00 <span>ежедневно</span>
+        </div>
+        <div class="map__wrap">
+            <div class="map__block-info">
+                <div class="map__row phone-row">
+                    <div class="label">Телефон:</div>
+                    <div class="value"> <a href="tel:+79884199905">8 988 419 99 05</a></div>
+                    <div class="icons">
+                        <div class="msg-icons">
+                            <a href="#" class="msg-link">
+                                <div class="msg-icon telegram-icon"></div>
+                            </a>
+                            <a href="#" class="msg-link">
+                                <div class="msg-icon whatsapp-icon"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="map__row email-row">
+                    <div class="label">E-mail:</div>
+                    <div class="value"> <a href="mailto:advocat-belorechensk@mail.ru">advocat-belorechensk@mail.ru</a>
+                    </div>
+                </div>
+                <div class="map__row address-row">
+                    <div class="label">Адрес офиса:</div>
+                    <div class="value">г. Белореченск, ул. Дундича 1</div>
+                </div>
+            </div>
+            <div style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.ru/maps/10988/belorechensk/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Белореченск</a><a
+                    href="https://yandex.ru/maps/10988/belorechensk/house/ulitsa_dundicha_1/Z0AYfgBgT0ACQFpufXt3eH5lbA==/?ll=39.870655%2C44.769269&source=wizgeo&utm_medium=mapframe&utm_source=maps&z=16"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Дундича, 1 на карте Белореченска
+                    — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUJmWR41C" width="100%"
+                    height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__block">
+                    <div class="footer__logo">Адвокат Оганян О. А.</div>
+                    <div class="footer__uri">Банкротство физических лиц и иные юридические услуги в г. Белореченске
+                        <br><br>ИНН 3242372867</div>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__title footer__title_address">Наш адрес
+                        в Белореченске</div>
+                    <div class="footer__text">ул. Дундича 1
+                        с 9:00 до 10:00 ежедневно</div>
+                    <div class="footer__link">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            Согласие на обработку персональных данных
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__title">Контакты:</div>
+                    <div class="footer__phone"><a type="tel" href="tel:+79884199905">8 988 419 99 05</a></div>
+                    <div class="footer__msg">
+                        <div class="msg-icons">
+                            <a href="#" class="msg-link">
+                                <div class="msg-icon telegram-icon"></div>
+                            </a>
+                            <a href="#" class="msg-link">
+                                <div class="msg-icon whatsapp-icon"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="footer__btn open-modal">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+        <div class="author">
+            Дизайн и разработка<a href="http://t.me/todaystudio_web/" target="_blank" rel="noopener noreferrer">
+                TodayStudio</a>
+        </div>
+    </footer>
+
+    <script src="./js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+.write-off {
+    margin-top: 82px;
+    width: 100%;
+    min-height: 507px;
+    height: auto;
+    padding: 57px 0 90px 0;
+    box-sizing: border-box;
+    background-color: #FFFBED;
+    position: relative;
+
+    .section-title-wrap {
+        margin-top: 0;
+    }
+
+    &__bg-img {
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        mix-blend-mode: luminosity;
+    }
+
+    &__wrap {
+        max-width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 76px;
+        row-gap: 27px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        flex: 1 1;
+
+        .number {
+            width: 68px;
+            height: 68px;
+            min-width: 68px;
+            min-height: 68px;
+            border-radius: 13px;
+            background-color: #FFBD12;
+            font-family: 'Fredoka One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 54px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #3D3D3D;
+        }
+    }
+}
+
+@media (max-width: 801px) {
+    .write-off {
+        &__wrap {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 444px) {
+    .write-off {
+        &__item {
+            .number {
+                min-width: 49px;
+                min-height: 49px;
+                width: 49px;
+                height: 49px;
+                font-size: 28px;
+                line-height: 28px;
+            }
+            .text {
+                font-size: 14px;
+            }
+        }
+    }
+}
